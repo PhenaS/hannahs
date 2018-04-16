@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .column{
+                float: left;
+                width: 20%;
+                padding: 10px;
+                height: 150px;
+            }
+            .row:after{
+                content:"";
+                display: table;
+                clear: both; 
+            }
+            form{
+                text-align: center;
+            }
+            .submit{
+                float: right;
+                bottom: 0;
+            }
+        </style>
+        <title>Showroom Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <form>
+            <h1> Register New Customer </h1>
+                <div class="column">
+                    <h2> *First Name: </h2>
+                    <input type = text name = "firstname" placeholder="First Name"><br>
+                    <h2> *Last Name: </h2>
+                    <input type = text name = "lastname" placeholder="Last Name"><br>
+                    <h2> Business Name: </h2>
+                    <input type = text name = "businessname" placeholder="Business Name"><br>
+                    <h2> *E-Mail Address: </h2>
+                    <input type = email name = "e-mailaddress" placeholder="E-mail Address"><br>
+                    <h2> *Phone: </h2>
+                    <input type = text name = "phone" placeholder="Phone Number"><br>
+                    <h2> *Password: </h2>
+                    <input type = password name = "password" placeholder="Password"><br>
+                </div>
+                <div class="column">
+                    <h2> *Address: </h2>
+                    <input type = text name = "address" placeholder="Address"><br>
+                    <h2> *City: </h2>
+                    <input type = text name = "city" placeholder="City"><br>
+                    <h2> *State: </h2>
+                    <input type = text name = "state" placeholder="State"><br>
+                    <h2> *Zip: </h2>
+                    <input type = email name = "e-mailaddress" placeholder="E-mail Address"><br>
+                    <h2> *Country: </h2>
+                    <input type = text name = "phone" placeholder="Phone Number"><br>
+                    <h2> *Confirm Password: </h2>
+                    <input type = password name = "password" placeholder="Password"><br>
+                </div>
+                <input type ="submit" name ="Register"> 
+        </form>
+    </body>
+</html>
